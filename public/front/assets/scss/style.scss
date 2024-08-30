@@ -1,0 +1,523 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Less ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+/* ===================================== Header CSS ==================================== */
+.header-cover{
+   padding-top: 5px; 
+}
+
+header{
+    z-index: 1111;
+    top: 0px;
+    padding: 10px !important;
+    
+    .logo{
+        img{
+            max-width: 200px;
+            margin-top: 6px;
+            margin-bottom: 7px;
+        }
+    }
+    .nav{
+        @media screen and (max-width: 858px){
+            display: block;
+        }
+        ul{
+           
+            @media screen and (max-width: 858px){
+                float: right;
+            }
+            @media screen and (max-width: 767px){
+                width: 100%;
+               
+            }
+            li{
+                float: left;
+                padding: 20px;
+                a{
+                    font-weight: 500;
+                    color: #676464;
+                    font-size: .9rem;
+                    text-transform: uppercase;
+                }
+                @media screen and (max-width: 858px){
+                    padding: 20px 15px;
+                }
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                    padding: 10px;
+                    border-bottom: 1px solid #cccccc75;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .download{
+        text-align: center;
+        .btn{
+            box-shadow: none;
+            border-radius: 50px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+    }
+}
+
+.small-menu{
+    float: right;
+    color: #2a3274;
+    font-size: 2rem;
+    margin-right: 2px;
+    padding-top: 13px;
+    
+}
+.scroll-to-fixed-fixed{
+    background-color: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+    padding-bottom: 5px !important;
+    padding-top: 8px !important;
+}
+/* ===================================== Header CSS ==================================== */
+
+.slider{
+    @include big-padding();
+    padding-top: 90px;
+    background: url(../images/bg.jpg) no-repeat scroll center bottom;
+    background-size: cover;
+    .detail{
+        
+        padding-bottom: 34px;
+        text-align: center;
+        h2{
+           margin-bottom: 30px; 
+            font-size: 4rem;
+            @media screen and (max-width: 600px){
+                font-weight: 2rem;
+            }
+        }
+        p{
+          margin-bottom: 40px;
+          font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .btn{
+            box-shadow: none;
+            font-weight: 500;
+            border-radius: 50px;
+            padding-right: 30px;
+            padding-left: 30px;
+            background: rgb(47, 202, 45) !important;
+        }
+        .img-cover{
+            img{
+                max-width: 250px;
+                margin-top: 30px;
+            }
+        }
+    }
+    .image{
+        padding-top: 60px;
+        @media screen and (max-width: 767px){
+            padding-top: 0px;
+        }
+    }
+}
+
+/* ===================================== Key Features CSS ==================================== */
+
+.key-features{
+    @include big-padding();
+    background: #fff;
+    .serv-row{
+        .serv-col{
+            
+            background-color: #FFF;
+            padding: 15px;
+            display: flex;
+            margin-bottom: 30px;
+            .icon{
+                font-size: 2.5rem;
+                padding: 10px;
+                margin: auto;
+                color: rgb(255, 25, 0);
+                i{
+                    width: 45px;
+                    text-align: center;
+                }
+            }
+            .detail{
+                padding: 10px;
+                h4{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: .84rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.features{
+    @include big-padding();
+    background: rgb(248, 251, 253);
+    .ker-featur-row{
+        margin-top: 20px;
+    }
+    .featurecol{
+        .single-feature{
+            margin-bottom:40px;
+            display: flex;
+            i{
+                font-size: 2rem;
+                color: rgb(255, 25, 0);
+            }
+            h6{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+            p{
+                font-weight: 300;
+                font-size: 1rem;
+                color: #000;
+            }
+        }
+        
+    }
+    .feature-left{
+        .single-feature{
+            text-align: left;
+            display: flex;
+        }
+    }
+    .featur-image{
+       
+        text-align: center;
+    }
+    .icon{
+        padding: 20px;
+        i{
+            width: 30px;
+            text-align: center;
+        }
+    }
+}
+
+
+/* ===================================== Our Products CSS ==================================== */
+
+
+.our-products{
+    @include big-padding();
+    .product-roew{
+        margin-top: 30px;
+        .pro-cover{
+            background-color: #FFF;
+            @include shado-1();
+            margin-bottom: 30px;
+        }
+        .product-img{
+            
+        }
+        .product-detail{
+            text-align: center;
+            h4{
+               font-size: 1.2rem;
+                margin-bottom: 0px;
+                 color: $color-primary;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            h2{
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+               
+                color:  rgb(255, 25, 0);
+            }
+            .btn{
+                margin-bottom: 30px;
+                padding-right: 25px;
+                padding-left: 25px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+
+/* =================== Testimonial Starts Here =================== */
+
+.customer-serv{
+    @media screen and (max-width: 554px){
+        padding: 40px 20px;
+    }
+	
+	@media screen and (max-width: 1063px){
+		padding: 40px 20px;
+	}
+	@media screen and (max-width: 348px){
+		 padding: 30px 10px !important;
+	}
+     padding: 45px;
+     background-color: #fdfdfd;
+     padding-bottom: 120px;
+    .ro-clo {
+        padding: 40px 0px;
+		padding-top: 25px;
+    }
+    .card-b::after {
+        box-sizing: border-box;
+        background-color: #FFF;
+        content: "";
+        position: absolute;
+        z-index: 100;
+        height: 25px;
+        left: 35px;
+        top: 108px;
+        transform: rotate(135deg);
+        width: 25px;
+    }
+    .card-b {
+        @include shado-1();
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        background: url(../images/quotes.png) no-repeat bottom right;
+            background-color: rgba(0, 0, 0, 0);
+            background-position-x: right;
+            background-position-y: bottom;
+            background-size: auto auto;
+        background-color: #FFF;
+        background-size: 40px;
+        background-position: right 10px bottom 5px;
+        p{
+            font-size: .95rem;
+        }
+    }
+    .an-mtc {
+        padding-top: 23px;
+    }
+    .stars {
+        padding-top: 33px;
+		
+        li {
+            list-style: none;
+            color: #f8b739;
+            float: right;
+            font-size: 13px;
+            margin-left: 4px;
+        }
+    }
+    .img-circl {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .img-circl img {
+        width: 80%;
+        border-radius: 50%;
+    }
+	.star-par{
+		padding-left: 0px;
+	}
+	@media screen and (max-width: 1013px){
+		.stars li{
+			font-size: 12px;
+		}
+	}
+	@media screen and (max-width: 991px){
+		.card-b::after{
+			display: none;
+			margin-top: 20px;
+		}
+		.col-12{
+			margin-top: 20px;
+		}
+	}
+}
+
+
+/* ===================================== Our Team Style  ================================== */
+
+.our-team {
+    background: rgb(248, 251, 253);
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .our-team {
+      padding: 50px 10px; } }
+.our-team .team-row {
+    margin-top: 20px; }
+.our-team .team-row .single-usr {
+      box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+      margin-bottom: 20px; 
+}
+.our-team .team-row .single-usr img {
+        width: 100%; 
+}
+.our-team .team-row .single-usr .det-o {
+        padding: 20px;
+        background-color: #ffffff; 
+}
+.our-team .team-row .single-usr .det-o h4 {
+          color: #444;
+          margin-bottom: 0px; 
+    font-size: 1.2rem;
+}
+.our-team .team-row .single-usr .det-o i {
+          color: #444; 
+}
+
+
+/* ===================================== FAQ CSS ==================================== */
+
+.faq-qq{
+    @include big-padding();
+    .faq-row{
+        .facc{
+            padding: 20px;
+             margin-bottom: 20px;
+            h4{
+               
+            }
+        }
+    }
+}
+
+/* =================== Blog Style Starts Here =================== */
+
+.blog{
+    background-color:#f7f7f7;
+    @include big-padding();
+   
+    .blog-row{
+        .blog-col{
+            background-color: #fff;
+            padding: 15px;
+            @include shado-4();
+            margin-bottom: 30px;
+            img{
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            span{
+               color: #a09f9f;    
+               font-size: .83rem;
+            }
+            h4{
+                margin-top: 15px;
+                font-weight: 400;
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                line-height: 26px;
+            }
+            p{
+                font-weight: 500;
+                font-size: .9rem;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* ===================================== Footer Cover Style  ================================== */
+.footer-ablove {
+  padding: 30px;
+  background-color: #2fca2d;
+  color: #FFF;
+  font-size: 1.5rem; }
+  .footer-ablove .btn {
+    float: right;
+    background-color: #FFF;
+    font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+footer {
+  padding: 80px 50px;
+  background-color: #222;
+  color: #FFF; }
+  @media screen and (max-width: 940px) {
+    footer {
+      padding: 50px 10px; } }
+  footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px; }
+  footer .about p {
+    font-size: .9em;
+    margin-bottom: 20px; }
+  footer .about .foot-address {
+    display: flex; }
+    footer .about .foot-address .icon {
+      padding: 20px 10px; }
+    footer .about .foot-address .addet {
+      font-size: .9rem;
+      margin: auto 0px; }
+  footer .fotblog .blohjb {
+    margin-bottom: 10px; }
+    footer .fotblog .blohjb p {
+      font-size: .9rem; }
+    footer .fotblog .blohjb span {
+      font-size: .9rem; }
+  footer .glink ul li {
+    padding: 10px; }
+    footer .glink ul li i {
+      margin-right: 10px; }
+    footer .glink ul li a {
+      color: #FFF; }
+  footer .tags ul li {
+    float: left;
+    padding: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #CCC; }
+
+.copy {
+  padding: 20px;
+  background-color: #191616;
+  color: #FFF; }
+  .copy a {
+    color: #FFF; }
+  .copy span {
+    float: right; }
+    .copy span i {
+      margin-right: 20px; }
+
+      .cop-ck{
+        padding: 20px;
+        background-color: #ffffffbd;
+        h2{
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+      }
+
+
+
+
+html {
+  scroll-behavior: smooth; 
+}
+
+.scroll-container {
+  scroll-padding: 50px 0 0 50px; 
+}
